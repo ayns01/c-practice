@@ -15,7 +15,19 @@ char *vc_strncpy(char *dest, char *src, unsigned int n) {
         dest[i] = src[i];
         i++;
     }
-
     return 0;
 }
+
+char *vc_strncpy2(char *dest, char *src, size_t n) {
+    size_t i;
+    for (i = 0; i < n && src[i] != '\0'; i++) {
+        dest[i] = src[i];
+    }
+    for (; i < n; i++) {
+        dest[i] = '\0';
+    }
+    return dest;
+}
+
+
 

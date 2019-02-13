@@ -1,12 +1,13 @@
 /**
- * File              : vc_print_program_name.c
+ * File              : vc_rev_params.c
  * Author            : Ayana, Tom
- * Date              : Mon 11 Feb 2019
+ * Date              : Sun, Feb 10, 2019
  */
+#include <stdio.h>
 
 int main(int argc, char *argv[])
 {
-    for (int i = 1;i < argc;i++)
+    for (int i = (argc - 1);i > 0;i--)
     {
         printf("%s ", argv[i]);
         printf("\n");

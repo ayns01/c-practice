@@ -15,3 +15,11 @@ char *vc_strcpy(char *dest, char *src) {
     return dest;
 }
 
+char *vc_strcpy2(char *dest, char *src)
+{
+    char *ret = dest;
+    while ((*dest++ = *src++))
+        ;
+    return ret;
+}
+
