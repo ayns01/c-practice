@@ -24,17 +24,17 @@ void vc_foreach(int *tab, int length, void(*f)(int)) {
     }
 }
 
-int main() {
-
-    static int tab[100];
-    for (int i = 0; i < 100; ++i) {
-        tab[i] = i+1;
-    }
-
-    vc_foreach(tab, 86, &vc_putnbr);
-
-    return 0;
-}
+//int main() {
+//
+//    static int tab[100];
+//    for (int i = 0; i < 100; ++i) {
+//        tab[i] = i+1;
+//    }
+//
+//    vc_foreach(tab, 86, &vc_putnbr);
+//
+//    return 0;
+//}
 
 
 

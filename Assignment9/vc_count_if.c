@@ -30,14 +30,14 @@ int vc_count_if(char **tab, int(*f)(char*)) {
     return c;
 }
 
-int main() {
-
-    char* a[3] = { "One", "Two", "Three" };
-
-    int (*p)(char*);
-    p = &vc_find_a_char;
-
-    printf("%d", vc_count_if(a, p));
-
-    return 0;
-}
+//int main() {
+//
+//    char* a[3] = { "One", "Two", "Three" };
+//
+//    int (*p)(char*);
+//    p = &vc_find_a_char;
+//
+//    printf("%d", vc_count_if(a, p));
+//
+//    return 0;
+//}
