@@ -54,7 +54,6 @@ char **vc_split_whitespaces(char *str){
         int numChars = vc_count_chars(str);
         arrpointer[i] = (char *) malloc(numChars * sizeof(char));
         for(int j=0; j<numChars; j++) {
-            if (i == (numWords+1)) { arrpointer[i][j] = '0'; }
             arrpointer[i][j] = str[j];
             pos++;
         }
